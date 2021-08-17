@@ -1,0 +1,32 @@
+[
+  {
+    "nome": "michel",
+    "email": "michel@michel.com",
+    "salario": "2000",
+    "estado": "ceara",
+    "empresa": "facebook",
+    "idade": "34",
+    "sexo": "M",
+    "cpf": "055.986.863-15"
+  },
+  {
+    "nome": "miguel",
+    "email": "miguel@michel.com",
+    "salario": "3000",
+    "estado": "ceara",
+    "empresa": "facebook",
+    "idade": "36",
+    "sexo": "M",
+    "cpf": "055.987.863-15"
+  },
+  {
+    "nome": "gabriela",
+    "email": "gabriela@michel.com",
+    "salario": "10000",
+    "estado": "ceara",
+    "empresa": "facebook",
+    "idade": "20",
+    "sexo": "M",
+    "cpf": "055.988.863-15"
+  }
+]

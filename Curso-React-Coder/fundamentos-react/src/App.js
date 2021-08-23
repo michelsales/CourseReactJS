@@ -6,11 +6,15 @@ import Familia from "./components/basicos/Familia.jsx";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import ListaProdutos from "./components/repeticao/ListaProdutos";
+import ParOUImpar from "./components/condicional/ParOUImpar";
 
 function App(props) {
   return (
     <div className="App">
       <h1>Inicio</h1>
+      <Card titulo="par ou impar" color="purple">
+        <ParOUImpar numero={21} />
+      </Card>
       <Card titulo="map com tabela" color="purple">
         <ListaProdutos />
       </Card>

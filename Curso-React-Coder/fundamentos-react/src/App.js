@@ -4,11 +4,15 @@ import Aleatorio from "./components/basicos/Aleatorio";
 import Card from "./components/layout/Card";
 import Familia from "./components/basicos/Familia.jsx";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import ListaAlunos from "./components/repeticao/ListaAlunos";
 
 function App(props) {
   return (
     <div className="App">
       <h1>Inicio</h1>
+      <Card titulo="Componente com Filhos" color="purple">
+        <ListaAlunos />
+      </Card>
       <Card titulo="Componente com Filhos" color="purple">
         <Familia sobrenome="silva">
           <FamiliaMembro nome="joao" />

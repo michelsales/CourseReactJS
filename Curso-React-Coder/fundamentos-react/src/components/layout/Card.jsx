@@ -9,7 +9,6 @@ export default (props) => {
 
   return (
     <div style={estilo}>
-      <div>Conteudo:</div>
       <h1>{props.titulo}</h1>
       <div>
           {props.children}

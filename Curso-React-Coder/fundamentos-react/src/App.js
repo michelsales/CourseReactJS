@@ -9,11 +9,15 @@ import ListaProdutos from "./components/repeticao/ListaProdutos";
 import ParOUImpar from "./components/condicional/ParOUImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
 
 function App(props) {
   return (
     <div className="App">
       <h1>Inicio</h1>
+      <Card titulo=" comunicação indireta filho/pai" color="purple">
+        <IndiretaPai />
+      </Card>
       <Card titulo=" comunicação direta pai/filho" color="purple">
         <DiretaPai />
       </Card>

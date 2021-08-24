@@ -37,7 +37,7 @@ const UseEffect = (props) => {
             <SectionTitle title="exercicio #01" />
             <div className="center">
                 <span className="text">Fatorial</span>
-                <span className="text red">{fatorial == -1 ? 'Não existe' : fatorial}</span>  
+                <span className="text red">{fatorial === -1 ? 'Não existe' : fatorial}</span>  
                 <input type="number" className="input" value={number} onChange={(e) => setNumber(e.target.value) }/>
             </div>
             <SectionTitle title="exercicio #02" />

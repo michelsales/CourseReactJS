@@ -8,11 +8,15 @@ import ListaAlunos from "./components/repeticao/ListaAlunos";
 import ListaProdutos from "./components/repeticao/ListaProdutos";
 import ParOUImpar from "./components/condicional/ParOUImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import DiretaPai from "./components/comunicacao/DiretaPai";
 
 function App(props) {
   return (
     <div className="App">
       <h1>Inicio</h1>
+      <Card titulo=" comunicação direta pai/filho" color="purple">
+        <DiretaPai />
+      </Card>
       <Card titulo="Usuário ou deslogado" color="purple">
         <UsuarioInfo usuario={{ nome: " fernando" }} />
       </Card>

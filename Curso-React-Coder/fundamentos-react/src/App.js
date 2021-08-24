@@ -11,11 +11,15 @@ import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import Input from "./components/Formulario/Input";
+import Mega from "./components/DesafioMegaSena/Mega";
 
 function App(props) {
   return (
     <div className="App">
       <h1>Inicio</h1>
+      <Card titulo="Mega sena - desafio" color="red">
+        <Mega />
+      </Card>
       <Card titulo="componentes controlados - formulario" color="purple">
         <Input />
       </Card>

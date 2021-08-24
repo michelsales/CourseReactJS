@@ -14,8 +14,7 @@ function App(props) {
     <div className="App">
       <h1>Inicio</h1>
       <Card titulo="Usuário ou deslogado" color="purple">
-        <UsuarioInfo usuario={{nome: 'fernando'}}/>
-        <UsuarioInfo usuario={{email: 'fernand@o.com'}}/>
+        <UsuarioInfo usuario={{ nome: " fernando" }} />
       </Card>
       <Card titulo="par ou impar" color="purple">
         <ParOUImpar numero={21} />

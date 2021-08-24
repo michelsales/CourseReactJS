@@ -10,11 +10,15 @@ import ParOUImpar from "./components/condicional/ParOUImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import Input from "./components/Formulario/Input";
 
 function App(props) {
   return (
     <div className="App">
       <h1>Inicio</h1>
+      <Card titulo="componentes controlados - formulario" color="purple">
+        <Input />
+      </Card>
       <Card titulo=" comunicação indireta filho/pai" color="purple">
         <IndiretaPai />
       </Card>

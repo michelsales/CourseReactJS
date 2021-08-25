@@ -1,24 +1,8 @@
 import React, { useReducer } from "react";
 import PageTitle from "../../components/layout/PageTitle";
 
-const initialState = {
-  card: [],
-  products: [],
-  user: null,
-  //foco
-  number: 0,
-};
-
-function reducer(state, action) {
-  switch (action.type) {
-    case "number_add2":
-      return { ...state, number: state.number + 2 };
-    case "login":
-      return { ...state, user: { name: action.payload } };
-    default:
-      return state;
-  }
-}
+import { reducer, initialState } from "../../store";
+import { number_add2, login} from '../../store/actions';
 
 const UseReducer = (props) => {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -36,7 +20,7 @@ const UseReducer = (props) => {
         )}
         <button
           className="btn"
-          onClick={() => dispatch({ type: "login", payload: "michel" })}
+          onClick={() => login(dispatch, 'joão')}
         >
           Login
         </button>
@@ -45,9 +29,28 @@ const UseReducer = (props) => {
         <div>
           <button
             className="btn"
-            onClick={() => dispatch({ type: "number_add2" })}
+            onClick={ () => number_add2(dispatch) }
           >
             +2
+          </button>
+          <button
+            className="btn"
+            onClick={() => dispatch({ type: "multiply7" })}
+          >
+            +7
+          </button>
+          <button
+            className="btn"
+            onClick={() => dispatch({ type: "divisor25" })}
+          >
+            /25
+          </button>
+
+          <button
+            className="btn"
+            onClick={() => dispatch({ type: "addYourNumber", payload: 5 })}
+          >
+              5
           </button>
         </div>
       </div>

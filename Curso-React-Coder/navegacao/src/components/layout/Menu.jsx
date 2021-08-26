@@ -18,6 +18,9 @@ function Menu(props) {
             <li>
               <Link to="/about">Sobre</Link>
             </li>
+            <li>
+              <Link to="/naoExiste">Não existe...</Link>
+            </li>
           </ul>
         </nav>
       </aside>

@@ -4,7 +4,7 @@ const About = (props) =>  {
   return (
     <div className="About">
       <h1>Sobre</h1>
-      <p> nosso sistema foi criado...</p>
+      <h2>Nosso sistema foi criado...</h2>
     </div>
   );
 }

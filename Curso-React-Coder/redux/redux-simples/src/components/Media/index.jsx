@@ -19,8 +19,7 @@ function mapStateToProps(state) {
   return {
     min: state.numeros.min,
     max: state.numeros.max,
-    nomes: state.nomes
-   }
+  }
 }
 
 export default connect(mapStateToProps)(Media);

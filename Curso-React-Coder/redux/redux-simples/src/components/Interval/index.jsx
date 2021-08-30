@@ -12,16 +12,16 @@ function Interval(props) {
           <strong>Mínimo: </strong>
           <input
             type="number"
-            value={min}
-            onChange={(e) => props.onMinChanged(+e.target.value)}
+            value={0}
+            readOnly
           />
         </span>
         <span>
           <strong>Máximo: </strong>
           <input
             type="number"
-            value={max}
-            onChange={(e) => props.onMaxChanged(+e.target.value)}
+            value={10}
+            readOnly
           />
         </span>
       </div>
